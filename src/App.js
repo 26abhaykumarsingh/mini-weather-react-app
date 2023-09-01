@@ -1,8 +1,10 @@
-import hotBg from "./assets/hot.jpg";
-import coldBg from "./assets/cold.jpg";
 import Descriptions from "./components/Descriptions";
 import { useEffect, useState } from "react";
 import { getFormattedWeatherData } from "./weatherService";
+const hotBg =
+  "https://images.unsplash.com/uploads/14121010130570e22bcdf/e1730efe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80";
+const coldBg =
+  "https://images.unsplash.com/photo-1635420280816-c0dc0ee8a7a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80";
 
 function App() {
   const [city, setCity] = useState("Paris");
