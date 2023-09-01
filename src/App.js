@@ -47,7 +47,7 @@ function App() {
   return (
     <div className="app" style={{ backgroundImage: `url(${bg})` }}>
       <div className="overlay">
-        {weather && (
+        {weather ? (
           <div className="container">
             <div className="section section__inputs">
               <input
@@ -75,6 +75,8 @@ function App() {
             {/* bottom description */}
             <Descriptions weather={weather} units={units} />
           </div>
+        ) : (
+          <h1>Error</h1>
         )}
       </div>
     </div>
