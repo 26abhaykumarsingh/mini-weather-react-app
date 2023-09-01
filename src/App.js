@@ -10,7 +10,7 @@ function App() {
   const [city, setCity] = useState("Paris");
   const [weather, setWeather] = useState(null);
   const [units, setUnits] = useState("metric");
-  const [bg, setBg] = useState(hotBg);
+  const [bg, setBg] = useState(coldBg);
 
   useEffect(() => {
     const fetchWeatherData = async () => {
