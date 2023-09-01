@@ -25,7 +25,7 @@ function App() {
     };
 
     fetchWeatherData();
-  }, [units, city]);
+  }, [units, city, weather]);
 
   const handleUnitsClick = (e) => {
     const button = e.currentTarget;
